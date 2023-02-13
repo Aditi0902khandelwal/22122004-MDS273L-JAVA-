@@ -99,3 +99,4 @@ Mandatory NOTE: your readme.md file should also contain a new task which is to d
 - 4-Exit
 - Your choice: 4
 - Program exit!
+![image](https://user-images.githubusercontent.com/118044645/218387291-3603803a-8126-46ba-b3c6-1dcd00dec5f0.png)
