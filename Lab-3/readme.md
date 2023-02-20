@@ -27,75 +27,76 @@ Mandatory NOTE: your readme.md file should also contain a new task which is to d
 
 
 ##  Output
---------Welcome to Student Portal------
-1- Entering the student details
-2-Displaying the details
-3-Searching the student's details
-4-Exit
-Your choice: 1
-Enter the details of the student: 
-Name: Aditi
-Roll No: 4
-Email: akhandelwal
-Program: msc
-Course: ds
---------Welcome to Student Portal------
-1- Entering the student details
-2-Displaying the details
-3-Searching the student's details
-4-Exit
-Your choice: 1
-Enter the details of the student: 
-Name: kapil
-Roll No: 5
-Email: kapill
-Program: mscc
-Course: ds
---------Welcome to Student Portal------
-1- Entering the student details
-2-Displaying the details
-3-Searching the student's details
-4-Exit
-Your choice: 1
-Enter the details of the student: 
-Name: tushar
-Roll No: 56
-Email: tunnu
-Program: mds
-Course: cs
---------Welcome to Student Portal------
-1- Entering the student details
-2-Displaying the details
-3-Searching the student's details
-4-Exit
-Your choice: 2
-Enter the name of the student whose details you want: 
-tushar
-Name;Rollno;Email;Program;Course
-tushar
-56
-tunnu
-mds
-cs
---------Welcome to Student Portal------
-1- Entering the student details
-2-Displaying the details
-3-Searching the student's details
-4-Exit
-Your choice: 3
-Whose details do you want? 
-kapil
-Name is found at position 2
-The details of kapil are:
-kapil
-5
-kapill
-mscc
-ds
---------Welcome to Student Portal------
-1- Entering the student details
-2-Displaying the details
-3-Searching the student's details
-4-Exit
-Your choice: 4
-Program exit!
+- --------Welcome to Student Portal------
+- 1- Entering the student details
+- 2-Displaying the details
+- 3-Searching the student's details
+- 4-Exit
+- Your choice: 1
+- Enter the details of the student: 
+- Name: Aditi
+- Roll No: 4
+- Email: akhandelwal
+- Program: msc
+- Course: ds
+- --------Welcome to Student Portal------
+- 1- Entering the student details
+- 2-Displaying the details
+- 3-Searching the student's details
+- 4-Exit
+- Your choice: 1
+- Enter the details of the student: 
+- Name: kapil
+- Roll No: 5
+- Email: kapill
+- Program: mscc
+- Course: ds
+- --------Welcome to Student Portal------
+- 1- Entering the student details
+- 2-Displaying the details
+- 3-Searching the student's details
+- 4-Exit
+- Your choice: 1
+- Enter the details of the student: 
+- Name: tushar
+- Roll No: 56
+- Email: tunnu
+- Program: mds
+- Course: cs
+- --------Welcome to Student Portal------
+- 1- Entering the student details
+- 2-Displaying the details
+- 3-Searching the student's details
+- 4-Exit
+- Your choice: 2
+- Enter the name of the student whose details you want: 
+- tushar
+- Name;Rollno;Email;Program;Course
+- tushar
+- 56
+- tunnu
+- mds
+- cs
+- --------Welcome to Student Portal------
+- 1- Entering the student details
+- 2-Displaying the details
+- 3-Searching the student's details
+- 4-Exit
+-Your choice: 3
+- Whose details do you want? 
+- kapil
+- Name is found at position 2
+- The details of kapil are:
+- kapil
+- 5
+- kapill
+- mscc
+- ds
+- --------Welcome to Student Portal------
+- 1- Entering the student details
+- 2-Displaying the details
+- 3-Searching the student's details
+- 4-Exit
+- Your choice: 4
+- Program exit!
+![image](https://user-images.githubusercontent.com/118044645/218387291-3603803a-8126-46ba-b3c6-1dcd00dec5f0.png)
