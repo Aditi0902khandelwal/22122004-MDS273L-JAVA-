@@ -1,21 +1,21 @@
 ## Question
-### Write a JAVA Menu driven program that does the following:
-### You can ONLY have the below variables as global variables
-### Account Number
-### Account Holder Name
-### Account Balance
-### You MUST have the below as functions
-### To initialize the customer
-### To deposit money
-### To withdraw money
-### To print the transactions
-### To print account summary
-### Your menu will have the following operations once the customer is created
-### To deposit money
-### To withdraw money
-### To print the transactions
-### To print account summary
-### You need to draw a flowchart, and structure your results and program description and other details in README.md
+ Write a JAVA Menu driven program that does the following:
+ You can ONLY have the below variables as global variables
+ Account Number
+ Account Holder Name
+ Account Balance
+ You MUST have the below as functions
+ To initialize the customer
+ To deposit money
+ To withdraw money
+ To print the transactions
+ To print account summary
+ Your menu will have the following operations once the customer is created
+ To deposit money
+ To withdraw money
+ To print the transactions
+ To print account summary
+ You need to draw a flowchart, and structure your results and program description and other details in README.md
 
 ## Output
 Welcome to customer portal
@@ -90,3 +90,8 @@ Balance is: 5000.0
 ------------------
 Enter your choice: 5
 Program will now end!
+
+
+## Flowchart
+![image](https://user-images.githubusercontent.com/118044645/221422320-882fd08c-6c34-43b5-af07-93a77110997b.png)
+
