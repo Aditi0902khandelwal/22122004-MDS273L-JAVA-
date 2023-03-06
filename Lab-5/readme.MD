@@ -34,5 +34,5 @@ DECRYPTED STRING: ADITI
  1. Encrypt a message
  2. Decrypt a message
 --------------------
-Enter your choice: 3
-Program will now exit!
+ Enter your choice: 3
+ Program will now exit!
