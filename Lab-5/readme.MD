@@ -15,24 +15,25 @@ Your program should have two functions, one for encryption and another for decry
 Draw a flow chart for your program and write the pseudocode before starting the coding in your observation notebook.
 
 # Output
-1.Encrypt a message
-2.Decrypt a message
+ 1. Encrypt a message
+ 2. Decrypt a message
 --------------------
 Enter your choice: 1
 Enter a string: 
 ADITI
 ------------------
 ENCRYPTED STRING: XAFQF
-1.Encrypt a message
-2.Decrypt a message
+ 1. Encrypt a message
+ 2. Decrypt a message
 --------------------
 Enter your choice: 2
 Enter a string: 
 XAFQF
 ------------------
 DECRYPTED STRING: ADITI
-1.Encrypt a message
-2.Decrypt a message
+ 1. Encrypt a message
+ 2. Decrypt a message
 --------------------
-Enter your choice: 3
-Program will now exit!
+ Enter your choice: 3
+ Program will now exit!
+![image](https://user-images.githubusercontent.com/118044645/223039715-b3110dae-2ab4-4334-acd5-481c1a2c6bde.png)
