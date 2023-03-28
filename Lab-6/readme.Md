@@ -24,12 +24,11 @@ Display all students
 Displays the details of all students.
 Save the details of each student in a file, with the student name as filename.
 
-### Output
-
+# Output
 1- Add a Student
-2-Search for a Student
-3-Update the details of a Student
-4-Display the details of all students
+2- Search for a Student
+3- Update the details of a Student
+4- Display the details of all students
 1
 NAME: Ashish
 EMAIL: ashish@gmail.com
