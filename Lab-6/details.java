@@ -1,8 +1,6 @@
 import java.io.File;
 import java.util.*;
 
-import javax.lang.model.element.Name;
-
 import java.io.*;
 
 class Student{
@@ -33,19 +31,45 @@ class Student{
 
     }
 
-    String toString(){
+    void saveIntoFile(){
+        String filename= "D:\\Lab-1\\22122004-MDS273L-JAVA-\\Lab-6\\details.java"+ Regno+".txt";
         String atts=this.name+" "+this.Regno+" "+this.email+" "+this.phone+" "+this.sclass+" "+this.dept;
         
 
         
     
             try{
+                System.out.print("Enter new file name: ");
+
+                File file = new File(filename);
+
+                if (file.exists()) {
+                System.out.println("file exists...");
+                } else {
+                System.out.println("file does not exist...");
+                if (file.createNewFile()) {
+                    System.out.println("file is created...");
+
                 
                 // read from file
-                File file=new File("student.txt");
-                FileWriter write = new FileWriter(file); //file writer class object to write the content to the file
-                write.write(atts); //obj[write].function[write]("content")
+                
+                FileWriter write = new FileWriter(filename); //file writer class object to write the content to the file
+                String inputData = "=========================================================================\n" +
+                            "NAME       EMAIL               PHONE        REG.NO.        DEPARTMENT\n" +
+                            "--------------------------------------------------------------------------\n" +
+                            String.format("%-11s", name) +
+                            String.format("%-20s", email) +
+                            String.format("%-13s", phone) +
+                            String.format("%-15s", Regno) +
+                            String.format("%-20s", dept);
+
+                write.write(inputData); //obj[write].function[write]("content")
                 write.close();
+                System.out.println("Data Saved...");
+                } else {
+                    System.out.println("Error in file creation...");
+                }
+            }
     
              
 
@@ -57,7 +81,7 @@ class Student{
                 System.out.println(e.getMessage());
             }
     
-          return atts;
+          
 
     }
 
@@ -66,10 +90,12 @@ class Student{
 public class details {
     public static void main(String[] args) {
 
-        Student obj=new Student(null, null, null, null, null, null);
+       
+        String name, phone, email, clas, department, reg, r, updateReg;
 
-        String[] st=new String[100];
+        Student[] st=new Student[100];
         int c=0;
+        int updateChoice;
         Scanner sc=new Scanner(System.in);
 
         boolean flag=false;
@@ -81,10 +107,190 @@ public class details {
             int ch=Integer.parseInt(sc.nextLine());
             if(ch==1){
                 flag=true;
-                Student 
-            }
-        }while(flag==true);
+                System.out.print("NAME: ");
+                    name = sc.nextLine();
+                    System.out.print("EMAIL: ");
+                    email = sc.nextLine();
+                    System.out.print("PHONE: ");
+                    phone = sc.nextLine();
+                    System.out.print("REG. NO.: ");
+                    reg = sc.nextLine();
+                    System.out.print("CLASS: ");
+                    clas = sc.nextLine();
+                    System.out.print("DEPARTMENT: ");
+                    department = sc.nextLine();
+                    Student temp = new Student(reg, name, email, phone, clas, department);
+                    for (int i = 0; i < st.length; i++) {
+                        if (st[i] == null) {
+                            st[i] = temp;
+                            st[i].saveIntoFile();
 
-    }
-    
-}
+                            break;
+                            
+                        }        
+            }
+        }
+
+            if(ch==2){
+                flag=true;
+                System.out.println("\n=============================SEARCH STUDENT=============================");
+                    System.out.print("ENTER REG. NO.: ");
+                    r = sc.nextLine();
+
+                    System.out.println(
+                            "====================================================================================");
+                    System.out.println(
+                            "NAME       EMAIL                              PHONE        REG.NO.        DEPARTMENT");
+                    System.out.println(
+                            "------------------------------------------------------------------------------------");
+
+                    for (int j = 0; j <st.length ; j++) {
+
+                        if (st[j] != null && st[j].Regno== r) {
+                            System.out.printf("%-11s" + "%-35s" + "%-13s" + "%-15s" + "%s\n",
+                                    st[j].name,
+                                    st[j].email,
+                                    st[j].phone,
+                                    st[j].Regno,
+                                    st[j].dept);
+                            break;
+                        }
+
+                        // break;
+                        // }
+
+                        // }
+
+                    }
+                    System.out.println(
+                            "\n========================================================================================");
+                    
+
+            }
+            if(ch==3){
+                flag=true;
+                System.out.print("ENTER REG.NO.:");
+                    updateReg = sc.nextLine();
+
+                    System.out.println("\t1.NAME");
+                    System.out.println("\t2.EMAIL");
+                    System.out.println("\t3.PHONE");
+                    System.out.println("\t4.REG. NO.");
+                    System.out.println("\t5.CLASS");
+                    System.out.println("\t6.DEPARTMENT");
+
+                    System.out.println("What you want to Update:");
+                    updateChoice = Integer.parseInt(sc.nextLine());
+
+                    switch (updateChoice) {
+                        case 1: {
+                            System.out.print("Enter Name:");
+                            for (Student k : st) {
+                                if (k.Regno.equals(updateReg)) {
+                                    k.name = sc.nextLine();
+                                    break;
+                                }
+                            }
+                            System.out.println("NAME UPDATETED !!");
+                            break;
+                        }
+
+                        case 2: {
+                            System.out.print("Enter Email:");
+                            for (Student k : st) {
+                                if (k.Regno.equals(updateReg)) {
+                                    k.email = sc.nextLine();
+                                }
+                            }
+                            System.out.println("EMAIL UPDATETED !!");
+                            break;
+                        }
+
+                        case 3: {
+                            System.out.print("Enter Phone:");
+                            for (Student k : st) {
+                                if (k.Regno.equals(updateReg)) {
+                                    k.phone = sc.nextLine();
+                                }
+                            }
+                            System.out.println("PHONE UPDATETED !!");
+                            break;
+                        }
+
+                        case 4: {
+                            System.out.print("Enter REG. NO.:");
+                            for (Student k : st) {
+                                if (k.Regno.equals(updateReg)) {
+                                    k.Regno = sc.nextLine();
+                                }
+                            }
+                            System.out.println("PHONE UPDATETED !!");
+                            break;
+                        }
+
+                        case 5: {
+                            System.out.print("Enter CLASS:");
+                            for (Student k : st) {
+                                if (k.Regno.equals(updateReg)) {
+                                    k.sclass = sc.nextLine();
+                                }
+                            }
+                            System.out.println("CLASS UPDATETED !!");
+                            break;
+                        }
+
+                        case 6: {
+                            System.out.print("Enter DEPARTMENT:");
+                            for (Student k : st) {
+                                if (k.Regno.equals(updateReg)) {
+                                    k.dept = sc.nextLine();
+                                }
+                            }
+                            System.out.println("DEPARTMENT UPDATETED !!");
+                            break;
+                        }
+
+                        default: {
+                            System.out.println("----------------------------");
+                            System.out.println("Please enter Valid Input");
+                            System.out.println("----------------------------");
+                            break;
+                        }
+                    }
+
+                    
+                }
+                if(ch==4){
+                    flag=true;
+                    System.out.println(
+                    "====================================================================================");
+                     System.out.println(
+                    "NAME       EMAIL                              PHONE        REG.NO.        DEPARTMENT");
+                     System.out.println(
+                    "------------------------------------------------------------------------------------");
+
+                    try {
+                        for (int a = 0; a <= st.length-1; a++) {
+                            if (st[a] != null) {
+                                System.out.printf("%-4d" + "%-11s" + "%-35s" + "%-13s" + "%-15s" + "%s\n",
+                                        a + 1,
+                                        st[a].name,
+                                        st[a].email,
+                                        st[a].phone,
+                                        st[a].Regno,
+                                        st[a].dept);
+                                        
+                            }
+                        }
+                    } catch (Exception e) {
+                        System.out.println(e.getMessage());
+                    }
+
+                    System.out.println("=========================================================================");
+                   break; 
+                }
+                
+            }
+            while(flag==true);
+}}
+
