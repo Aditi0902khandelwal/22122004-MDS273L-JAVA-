@@ -1,3 +1,4 @@
+# Question
 Create a Student class, that will store the details of the Student, below mentioned are the attributes of a student.
 Reg. No.
 Name
@@ -23,7 +24,7 @@ Display all students
 Displays the details of all students.
 Save the details of each student in a file, with the student name as filename.
 
-## Output
+### Output
 
 1- Add a Student
 2-Search for a Student
