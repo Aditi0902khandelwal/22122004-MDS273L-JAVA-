@@ -1,26 +1,26 @@
-import java.io.File;
-import java.util.*;
+import java.io.File; //package imported for file handling
+import java.util.*; //package imported for Scanner class
 
 import java.io.*;
 
-class Student{
-    String Regno;
+class Student{  //creating a Student class
+    String Regno; //global variables
     String name;
     String email;
     String phone;
     String sclass;
     String dept;
 
-    Student(String Regno,String name,String email,String phone,String sclass,String dept){
+    Student(String Regno,String name,String email,String phone,String sclass,String dept){ //parametrized constructor
         this.Regno=Regno;
-        this.name=name;
+        this.name=name;//initializing the values using 'this' keyword
         this.email=email;
         this.phone=phone;
         this.sclass=sclass;
         this.dept=dept;
     }
 
-    void details(){
+    void details(){ //to print the details of a particular student
         System.out.println("----------------");
         System.out.print("Name: "+this.name);
         System.out.print("Reg. No: "+this.Regno);
@@ -31,9 +31,9 @@ class Student{
 
     }
 
-    void saveIntoFile(){
-        String filename= "D:\\Lab-1\\22122004-MDS273L-JAVA-\\Lab-6\\details.java"+ Regno+".txt";
-        String atts=this.name+" "+this.Regno+" "+this.email+" "+this.phone+" "+this.sclass+" "+this.dept;
+    void saveIntoFile(){ //function that creates a file for the particular student
+        String filename= "D:\\Lab-1\\22122004-MDS273L-JAVA-\\Lab-6\\details.java"+ Regno+".txt"; //file name of a particular reg no
+        String atts=this.name+" "+this.Regno+" "+this.email+" "+this.phone+" "+this.sclass+" "+this.dept; //converts all the input to one string
         
 
         
@@ -43,11 +43,11 @@ class Student{
 
                 File file = new File(filename);
 
-                if (file.exists()) {
+                if (file.exists()) { //to check if file exists
                 System.out.println("file exists...");
                 } else {
                 System.out.println("file does not exist...");
-                if (file.createNewFile()) {
+                if (file.createNewFile()) { //if file doesn't exist then create a new file
                     System.out.println("file is created...");
 
                 
@@ -87,19 +87,19 @@ class Student{
 
 }
 
-public class details {
+public class details { //main function class
     public static void main(String[] args) {
 
        
         String name, phone, email, clas, department, reg, r, updateReg;
 
-        Student[] st=new Student[100];
+        Student[] st=new Student[100]; //student array
         int c=0;
         int updateChoice;
         Scanner sc=new Scanner(System.in);
 
         boolean flag=false;
-        do{
+        do{ //menu driven program
             System.out.println("1- Add a Student");
             System.out.println("2-Search for a Student");
             System.out.println("3-Update the details of a Student");
@@ -123,7 +123,7 @@ public class details {
                     for (int i = 0; i < st.length; i++) {
                         if (st[i] == null) {
                             st[i] = temp;
-                            st[i].saveIntoFile();
+                            st[i].saveIntoFile(); //calling the function from Student Class
 
                             break;
                             
@@ -134,7 +134,9 @@ public class details {
             if(ch==2){
                 flag=true;
                 System.out.println("\n=============================SEARCH STUDENT=============================");
-                    System.out.print("ENTER REG. NO.: ");
+                    System.out.print("ENTER REG. NO.  ");
+
+
                     r = sc.nextLine();
 
                     System.out.println(
@@ -146,28 +148,24 @@ public class details {
 
                     for (int j = 0; j <st.length ; j++) {
 
-                        if (st[j] != null && st[j].Regno.equals(r)) {
+                        if (st[j] != null && st[j].Regno.equals(r)) { //check for the particular reg no
                             System.out.printf("%-11s" + "%-35s" + "%-13s" + "%-15s" + "%s\n",
                                     st[j].name,
                                     st[j].email,
                                     st[j].phone,
                                     st[j].Regno,
-                                    st[j].dept);
+                                    st[j].dept); //print the details of the searched student
                             break;
                         }
 
-                        // break;
-                        // }
-
-                        // }
-
+                        
                     }
                     System.out.println(
                             "\n========================================================================================");
                     
 
             }
-            if(ch==3){
+            if(ch==3){ //update the details
                 flag=true;
                 System.out.print("ENTER REG.NO.:");
                     updateReg = sc.nextLine();
@@ -265,7 +263,7 @@ public class details {
 
                     
                 }
-                if(ch==4){
+                if(ch==4){ //print the details of all the students
                     flag=true;
                     System.out.println(
                     "====================================================================================");
