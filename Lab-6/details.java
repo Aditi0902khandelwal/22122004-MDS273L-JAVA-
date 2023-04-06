@@ -146,7 +146,7 @@ public class details {
 
                     for (int j = 0; j <st.length ; j++) {
 
-                        if (st[j] != null && st[j].Regno== r) {
+                        if (st[j] != null && st[j].Regno.equals(r)) {
                             System.out.printf("%-11s" + "%-35s" + "%-13s" + "%-15s" + "%s\n",
                                     st[j].name,
                                     st[j].email,
@@ -200,6 +200,7 @@ public class details {
                             for (Student k : st) {
                                 if (k.Regno.equals(updateReg)) {
                                     k.email = sc.nextLine();
+                                    break;
                                 }
                             }
                             System.out.println("EMAIL UPDATETED !!");
@@ -211,6 +212,7 @@ public class details {
                             for (Student k : st) {
                                 if (k.Regno.equals(updateReg)) {
                                     k.phone = sc.nextLine();
+                                    break;
                                 }
                             }
                             System.out.println("PHONE UPDATETED !!");
@@ -222,6 +224,7 @@ public class details {
                             for (Student k : st) {
                                 if (k.Regno.equals(updateReg)) {
                                     k.Regno = sc.nextLine();
+                                    break;
                                 }
                             }
                             System.out.println("PHONE UPDATETED !!");
@@ -233,6 +236,7 @@ public class details {
                             for (Student k : st) {
                                 if (k.Regno.equals(updateReg)) {
                                     k.sclass = sc.nextLine();
+                                    break;
                                 }
                             }
                             System.out.println("CLASS UPDATETED !!");
@@ -244,6 +248,7 @@ public class details {
                             for (Student k : st) {
                                 if (k.Regno.equals(updateReg)) {
                                     k.dept = sc.nextLine();
+                                    break;
                                 }
                             }
                             System.out.println("DEPARTMENT UPDATETED !!");
