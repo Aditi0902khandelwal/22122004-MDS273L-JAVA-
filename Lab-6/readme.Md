@@ -1,3 +1,4 @@
+# Question
 Create a Student class, that will store the details of the Student, below mentioned are the attributes of a student.
 Reg. No.
 Name
@@ -23,46 +24,88 @@ Display all students
 Displays the details of all students.
 Save the details of each student in a file, with the student name as filename.
 
-## Output
+# Output
 
 1- Add a Student
-2-Search for a Student
-3-Update the details of a Student
-4-Display the details of all students
+
+2- Search for a Student
+
+3- Update the details of a Student
+
+4- Display the details of all students
+
 1
+
 NAME: Ashish
+
 EMAIL: ashish@gmail.com
+
 PHONE: 465416
+
 REG. NO.: 22122034
+
 CLASS: MSc
+
 DEPARTMENT: DS
+
 Enter new file name: file does not exist...
+
 file is created...
+
 Data Saved...
+
 1- Add a Student
+
 2-Search for a Student
+
 3-Update the details of a Student
+
 4-Display the details of all students
+
 3
+
 ENTER REG.NO.:22122034
-        1.NAME
-        2.EMAIL
-        3.PHONE
-        4.REG. NO.
-        5.CLASS
-        6.DEPARTMENT
+
+1.NAME
+
+2.EMAIL
+
+3.PHONE
+
+4.REG. NO.
+
+5.CLASS
+
+6.DEPARTMENT
+
 What you want to Update:
+
 5
+
 Enter CLASS:MSc
+
 CLASS UPDATETED !!
+
 1- Add a Student
+
 2-Search for a Student
+
 3-Update the details of a Student
+
 4-Display the details of all students
+
 4
+
 ====================================================================================
+
 NAME       EMAIL                              PHONE        REG.NO.        DEPARTMENT
+
 ------------------------------------------------------------------------------------
+
 1   Ashish     ashish@gmail.com                   465416       22122034       DS
+
 =========================================================================
+
+
+
 
