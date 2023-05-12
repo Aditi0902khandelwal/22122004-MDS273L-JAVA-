@@ -75,3 +75,6 @@ Enter your choice:
 5 
 Program will now exit
 PS D:\Lab-1\22122004-MDS273L-JAVA-> 
+
+![lab1](https://github.com/Aditi0902khandelwal/22122004-MDS273L-JAVA-/assets/118044645/b09df464-c774-44db-81b0-b13cad773a23)
+
