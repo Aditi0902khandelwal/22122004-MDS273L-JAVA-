@@ -55,5 +55,6 @@ Employee details :-
   ----Thankyou for visiting-------
 
   PS D:\Lab-1\22122004-MDS273L-JAVA-> 
-  ![lab1](https://github.com/Aditi0902khandelwal/22122004-MDS273L-JAVA-/assets/118044645/538ffe6f-a635-4ce1-94db-4fec348a38fe)
+  ![AditiKapil_22122005_Lab_1_JAVA (1)](https://github.com/Aditi0902khandelwal/22122004-MDS273L-JAVA-/assets/118044645/ddf81b67-16c5-496f-9525-015802cca652)
+
 
